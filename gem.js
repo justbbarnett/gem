@@ -24,7 +24,7 @@ $(document).ready(function() {
 
         charImage.attr("data-power", powerRate[i]);
         $("#characters-section").append(charImage);
-       }
+    }
 
     $(".character-image").on("click", function(){
 
@@ -43,9 +43,11 @@ $(document).ready(function() {
 
         if (counter === targetNumber) {
           wins++, counter = 0;
+          alert ("You win! The villians will be very afraid.")
         }
         else if (counter >= targetNumber) {
           losses++, counter = 0;
+          alert ("You loose! This is not good news for humanity.")
         }
         var record = "<p>Wins: " + wins + "</p>" +
                     "<p>Losses: " + losses + "</p>";

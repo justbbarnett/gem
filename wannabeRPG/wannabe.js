@@ -80,12 +80,15 @@
     }
 
     for (var x in characters) {
-        // var charDiv = $( "<div>");
-        // charDiv.addClass ("character");
-        // charDiv.attr ("data-name", characters[x].name);
+        var charDiv = $( "<div>");
+        charDiv.addClass ("card character");
+
+        // var charDiv = $("<div class='card character'>")
+        charDiv.attr ("data-name", characters[x].name);
 
 
-        var charDiv = $("<div class='card'>")
+        
+        
         var charName = $( "<div class='character-name'>").text(characters[x].name);
         var charImage = $( "<img alt='Icredible character of your choice' class='character-image'>").attr("src", characters[x].image);
         var charHealth = $( "<div class='character-text'>").text(characters[x].health);
@@ -96,3 +99,16 @@
 
         
     }
+
+    // for (var char in characters) {
+
+    //     var charDiv = $("<div class='card card-iverse' style='baground-image:>")
+    //     var charName = $( "<div class=' card-title character-name'>").text(characters[x].name);
+    //     var charImage = $( "<img alt='Icredible character of your choice' class='character-image'>").attr("src", characters[x].image).attr("syle", background-image url);
+    //     var charHealth = $( "<div class='character-text'>").text(characters[x].health);
+        
+    //     charDiv.append(charName).append(charImage).append(charHealth);
+
+    //     $(".character-section").append(charDiv).addClass ("character");
+
+    // }
