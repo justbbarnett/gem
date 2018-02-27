@@ -81,7 +81,7 @@
 
     for (var x in characters) {
         var charDiv = $( "<div>");
-        charDiv.addClass ("card character");
+        charDiv.addClass ("card col-2 col-lg-2 character");
 
         // var charDiv = $("<div class='card character'>")
         charDiv.attr ("data-name", characters[x].name);
@@ -95,7 +95,7 @@
         
         charDiv.append(charName).append(charImage).append(charHealth);
 
-        $(".character-section").append(charDiv).addClass ("character");
+        $(".character-section").append(charDiv);
 
         
     }

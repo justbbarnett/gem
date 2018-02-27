@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     //The Incredibles family
 
-    var characters = [ "Mr", "Mrs", "Violet", "Dash", "Edna"];
+    var characters = [ "mr", "mrs", "violet", "dash", "edna"];
     var powerRate = [10, 8, 6, 5, 13];
     var counter = 0;
     var targetNumber = 103;
